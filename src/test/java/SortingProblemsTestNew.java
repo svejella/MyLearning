@@ -8,11 +8,11 @@ import org.testng.annotations.Test;
  * Time: 12:28 PM
  * To change this template use File | Settings | File Templates.
  */
-public class SortingProblemsTest {
+public class SortingProblemsTestNew {
 
     SortingProblems sortingProblems = new SortingProblems();
 
-    @Test(groups = {"smoke"})
+    @Test(groups = {"smoke","regression"})
     public void testBubbleSort()
     {
         int[] sorted = {2,5,7,9};
