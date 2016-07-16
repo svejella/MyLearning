@@ -12,8 +12,17 @@ public class SortingProblemsTest {
 
     SortingProblems sortingProblems = new SortingProblems();
 
-    @Test(groups = {"smoke"})
+    @Test(groups = {"smoke","regression"})
     public void testBubbleSort()
+    {
+        int[] sorted = {2,5,7,9};
+        int[] unsorted = {7,5,2,9};
+
+        Assert.assertEquals(sorted,sortingProblems.bubbleSort(unsorted));
+    }
+
+    @Test(groups = {"regression"})
+    public void testBubbleSortAgain()
     {
         int[] sorted = {2,5,7,9};
         int[] unsorted = {7,5,2,9};
